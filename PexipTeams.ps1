@@ -12,26 +12,26 @@ $PxVmssRegion = "eu"
 
 # Hostname of Teams Connector in Azure - Must match name in pfx certificate below
 # You need a different hostname for each region
-$PxTeamsConnFqdn = "pexip-Teams.renre.com"
+$PxTeamsConnFqdn = ""
  
 # Conference or Edge node pool (must be reachable from Teams Connector in Azure)
 # This name must exist in the certificate presented by the Pexip nodes
 # Example 1) Multiple individual Edge nodes
 # $PxNodeFqdns = "us-pxedge01.vc.example.com,us-pxedge01.vc.example.com"
 # Example 2) Certificate with SAN names, this name is in the cert presented by all nodes
-$PxNodeFqdns = "webrtc.renre.com"
+$PxNodeFqdns = ""
 
 # Azure Subscription ID for Pexip Teams Connector deployment
-$PxSubscriptionId = "ef74b95f-e893-4be4-8aee-1ec07554666e"
+$PxSubscriptionId = ""
  
 # Azure Region (must be a supported region)
 $PxAzureLocation = "northeurope"
  
 # Username for the Windows VM accounts
-$PxWinAdminUser = "adminrenre"
+$PxWinAdminUser = ""
  
 # Password for the Windows VM accounts (can be set with Get-Credential if desired)
-$PxWinAdminPassword = "Summer2019****" # Password for Windows account
+$PxWinAdminPassword = "" # Password for Windows account
  
 # Number of Teams Connector VMs
 $PxTeamsConnInstanceCount = "3"
@@ -78,7 +78,7 @@ $PxMgmtSrcAddrPrefixes = @()
 #
 # Example (specifying Pexip edge nodes and Management networks defined above):
 # $PxNodesSourceAddressPrefixes = @( "a.a.a.a", "c.c.c.0/28" ) + $PxMgmtSrcAddrPrefixes
-$PxNodesSourceAddressPrefixes = @("207.228.151.141","217.114.162.138")
+$PxNodesSourceAddressPrefixes = @("","")
 
 
 
